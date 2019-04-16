@@ -56,7 +56,7 @@ A gorgeous responsive theme for Hexo blog framework
 ## Quick start
 
 1. Download the latest version built and ready for production here : [releases](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/releases)
-2. Read [documentation](https://github.com/bmitchinson/hexo-theme-tranquilpeak/blob/master/DOCUMENTATION.md) to install and configure the theme.  
+2. Read [documentation](https://github.com/louisbarranqueiro/hexo-theme-tranquilpeak/blob/master/DOCUMENTATION.md) to install and configure the theme.  
 
 ## Demo
 
