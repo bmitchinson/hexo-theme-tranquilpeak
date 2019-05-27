@@ -1,13 +1,5 @@
 (function() {
   'use strict';
-  
-  /**
-   * search index in an array with a regex
-   * @param {Array} array
-   * @param {Regex} regex
-   * @param {Number} startpos
-   * @return {Number}
-   */
 
   var rPath = new RegExp(
     '((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[-;:&=+$,\\w]+@)?' +
@@ -23,21 +15,29 @@
   var loopClass = 'loop';
   var mutedClass = 'muted';
   var noControlsClass = 'nocontrols';
+  var figureClass = 'figure';
+  var videoClasses = [
+    captionClass,
+    noCaptionClass,
+    autoplayClass,
+    loopClass,
+    mutedClass,
+    noControlsClass
+  ];
   /**
    * Video tag
    *
    * Syntax:
    *     {% video [classes] videoURL [Optional Poster (Thumbnail) URL]
-   *     [Width] [Height] [Caption] %}
+   *     [Width] [Caption] %}
    * E.g:
    *     {% video loop http://example.com/video145.mp4
-   *     http://example.com/image.png 100% 95% "A beautiful sunrise" %}
+   *     http://example.com/image.png 95% "A beautiful sunrise" %}
    */
   hexo.extend.tag.register('video', function(args) {
     var original;
     var poster = '';
     var width = '';
-    var height = '';
     var classes = [];
     var html = '';
     var clear = '';
@@ -59,81 +59,61 @@
       width = args.shift();
     }
     
-    // Get height of video
-    if (args.length && rSize.test(args[0])) {
-      height = args.shift();
-    }
-    
     // Get title of video
     var title = args.join(' ');
 
     // Build the video HTML structure
-    var video = '<video ';
-    if (classes.indexOf(autoplayClass) >= 0) {
+    var video = '<video class="fig-video" ';
+    if (classes.includes(autoplayClass)) {
       video += 'autoplay playsinline ';
     }
-    if (classes.indexOf(loopClass) >= 0) {
+    if (classes.includes(loopClass)) {
       video += 'loop ';
     }
-    if (classes.indexOf(mutedClass) >= 0) {
+    if (classes.includes(mutedClass)) {
       video += 'muted ';
     }
-    if (classes.indexOf(noControlsClass) === -1) {
+    if (!classes.includes(noControlsClass)) {
       video += 'controls ';
     }
     if (poster !== '') {
       video += 'poster="' + poster + '" ';
     }
-    // add size
-    video += 'style="';
-    if (width || height) {
-      // add width
-      if (width) {
-        video += 'width:' + width + ';';
-      }
-      // add height
-      if (height) {
-        video += 'height:' + height + ';';
-      }
-    }
-    else {
-      video += 'width:100%;';
-    }
-    video += '" alt="' + title + '">\n';
+    video += 'alt="' + title + '">\n';
     video += '<source src="' + original + '" type="video/mp4">\n';
     video += '<p>Your browser doesn\'t support HTML5 Video :/</p>';
     video += '</video>';
 
     // Build div to retrieve normal flow of document
-    if (classes.indexOf(clearClass) >= 0) {
+    if (classes.includes(clearClass)) {
       clear = '<div style="clear:both;"></div>';
       // remove `clear` class of `classes` to not be attached on the main div
       classes.splice(classes.indexOf(clearClass), 1);
     }
     
+    // remove all video-related classes to only have style-related classes
+    videoClasses.forEach(function(videoClass) {
+      if (classes.includes(videoClass)) {
+        classes.splice(classes.indexOf(videoClass), 1);
+      }
+    });
+
     // Build HTML structure
-    html += '<div';
-    var placement = 'left';
-    if (classes.indexOf('right') >= 0) {
-      placement = 'right';
-    }
-    if (classes.indexOf('center') >= 0) {
-      placement = 'center';
-    }
-    let pos = ' style="text-align:' + placement + '"';
-    html += pos;
-    html += '>';
+    html += '<div class="' + figureClass + ' ' + classes.join(' ') + '" ';
+    html += width ? 'style="width:' + width + '"; ' : '';
+    html += '>\n';
     html += video;
-    
+
     // Add caption
-    if (title && classes.indexOf(noCaptionClass) === -1) {
-      html += '<span class="' + captionClass + '">';
+    if (title && !classes.includes(noCaptionClass)) {
+      html += '\n<span class="' + captionClass + '">';
       html += title + '';
       html += '</span>';
     }
     
-    html += '</div>';
-    // add `clear` div
+    html += '\n</div>';
+
+    // add `clear` div if previously specified
     html += clear;
     return html;
   });
