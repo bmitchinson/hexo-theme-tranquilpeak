@@ -18,5 +18,6 @@
         "no-var": "off",
         "no-invalid-this": "off",
         "linebreak-style": 0
+        "indent": ["error", 2, {"FunctionDeclaration": {"body": 1, "parameters": 2}}]
     }
 }
