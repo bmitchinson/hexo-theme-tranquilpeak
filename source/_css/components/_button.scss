@@ -27,7 +27,7 @@
 
 // Color variant
 .btn--default {
-    @include button-color-variant(map-get($colors, light));
+    @include button-color-variant(map-get($colors, link));
 }
 
 .btn--success {
