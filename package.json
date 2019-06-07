@@ -4,8 +4,8 @@
   "description": "A gorgeous responsive theme for Hexo blog framework",
   "main": "Gruntfile.js",
   "scripts": {
-    "start": "npm run grunt -- default",
-    "build": "npm run prod",
+    "start": "npm run prod",
+    "watch": "npm run grunt -- default",
     "prod": "npm run grunt -- buildProd",
     "grunt": "node ./node_modules/grunt-cli/bin/grunt",
     "lint": "node ./node_modules/eslint/bin/eslint.js .",
