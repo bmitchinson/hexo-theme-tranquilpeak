@@ -78,11 +78,11 @@ post:
 
 author:
     # Your biography (Markdown and HTML supported)
-    bio: "Former Pres. of [Computer Comfort](/Computer-Comfort-Year-3/), mentor
-    for [HackIowa](https://uiowa.campuslabs.com/engage/organization/hackiowa), 
-    Resident Assistant, Hackathon and Game Jam participant + organizer, and 
-    open source contributor. Senior at Iowa studying Computer Science and 
-    Engineering"
+    bio: "Senior at Iowa studying Computer Science and 
+    Engineering, Hackathon and Game Jam organizer + participant, open source 
+    contributor, former Pres. of [Computer Comfort](/Computer-Comfort-Year-3/), 
+    mentor for [HackIowa](https://uiowa.campuslabs.com/engage/organization/hackiowa), 
+    and Resident Assistant."
     
     # Your job
     job: "Computer Science + Engineering"
