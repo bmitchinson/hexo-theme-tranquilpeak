@@ -63,15 +63,15 @@ sidebar:
             icon: fab fa-twitter
         mail:
             title: global.mail
-            url: mailto:115bwm@gmail.com
+            url: mailto:mitchinson.dev@gmail.com
             icon: fas fa-envelope
         linkedin:
             title: global.linkedin
-            url: https://www.linkedin.com/in/ben-mitchinson-140bb7173/
+            url: https://www.linkedin.com/in/ben-mitchinson
             icon: fab fa-linkedin-in
         resume:
             title: Resume
-            url: https://res.cloudinary.com/dheqbiqti/image/upload/v1546633360/Documents/Resume.pdf
+            url: https://res.cloudinary.com/dheqbiqti/image/upload/v1559790855/Documents/Resume.pdf
             icon: fas fa-file-pdf
 
 

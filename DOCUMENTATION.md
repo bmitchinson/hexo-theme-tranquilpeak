@@ -402,7 +402,7 @@ E.g : `{% image fancybox right clear group:travel image2.png http://google.fr/im
  
 ### Video
 The video tag provides a way conveniently add videos. Often videos are prefered over gifs, since in compairison, "gifs" are [much larger and harder to deliever](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video/).
-Take a look at some examples here: [Video Tag Demo](https://benmitchinson.com/Video-Tag-Demo/)
+Take a look at some examples here: [Video Tag Demo](https://Mitchinson.dev/Video-Tag-Demo/)
 
 Syntax : `{% video [classes] videoURL [Optional Poster (Thumbnail) URL] [Width] [Height] [Caption] %}`
 
