@@ -34,6 +34,10 @@ sidebar:
             title: global.home
             url: /
             icon: fa fa-home
+        mail:
+            title: global.mail
+            url: mailto:mitchinson.dev@gmail.com
+            icon: fas fa-envelope
         tags:
             title: global.tags
             url: /all-tags
@@ -48,23 +52,19 @@ sidebar:
             icon: fa fa-search
             #`open-algolia-search` classes are used to open algolia search modal
             class: open-algolia-search
-        about:
-            title: global.about
-            url: /#about
-            icon: fa fa-question
     author_links:
         github:
             title: global.github
             url: https://github.com/bmitchinson
             icon: fab fa-github
+        dev.to:
+            title: dev.to
+            url: https://dev.to/bmitchinson
+            icon: fab fa-dev
         twitter:
             title: global.twitter
             url: https://twitter.com/115bwm/
             icon: fab fa-twitter
-        mail:
-            title: global.mail
-            url: mailto:mitchinson.dev@gmail.com
-            icon: fas fa-envelope
         linkedin:
             title: global.linkedin
             url: https://www.linkedin.com/in/ben-mitchinson
@@ -73,6 +73,8 @@ sidebar:
             title: Resume
             url: /resume
             icon: fas fa-file-pdf
+        
+
 
 
 # --------------------
