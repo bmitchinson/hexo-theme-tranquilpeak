@@ -1,5 +1,3 @@
 .sass-cache
 assets
 node_modules
-layout/_partial/head.ejs
-layout/_partial/script.ejs
