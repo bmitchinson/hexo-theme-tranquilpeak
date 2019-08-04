@@ -1,6 +1,6 @@
 # Tranquilpeak
 
-[![Build Status](https://img.shields.io/travis/LouisBarranqueiro/hexo-theme-tranquilpeak/master.svg?style=flat-square)](https://travis-ci.org/LouisBarranqueiro/hexo-theme-tranquilpeak)
+[![Build Status](https://img.shields.io/travis/bmitchinson/hexo-theme-tranquilpeak/master.svg?style=flat-square)](https://travis-ci.org/LouisBarranqueiro/hexo-theme-tranquilpeak)
 [![Slack](https://img.shields.io/badge/slack-join-cf0e5b.svg?style=flat-square)](https://now-examples-slackin-stlpermtzi.now.sh)
 
 A gorgeous responsive theme for Hexo blog framework 
