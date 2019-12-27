@@ -43,12 +43,17 @@ global:
         other: "{n} posts found"
     categories_found:
         zero: "no category found"
-        one: "1 cartegory found"
+        one: "1 category found"
         other: "{n} categories found"
     tags_found:
         zero: "no tag found"
         one: "1 tag found"
         other: "{n} tags found"
+    read_more_about_author: "Read more about the author"
+    zoom_in_on_picture: "Zoom in on the picture"
+    go_to_homepage: "Go to homepage"
+    open_link: "Open the link"
+    open_post: "Open the post"
 
 pagination:
     page: "page %d"
