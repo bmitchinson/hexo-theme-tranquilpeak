@@ -192,6 +192,35 @@ gitment:
     client_id:
     # Your client secret:
     client_secret:
+    # The attribute of posts to use to link them to GitHub issues.
+    # See all attributes: https://hexo.io/docs/variables#Page-Variables
+    # `path` is recommended because the identifier needs to be unique and shorter than 50 characters.
+    post_identifier: permalink
+
+# Your Gitalk information
+# Read https://github.com/gitalk/gitalk#options to set up Gitalk
+gitalk:
+    # Switch
+    enable: false
+    # Your client ID:
+    client_id:
+    # Your client secret:
+    client_secret:
+    # Your Github ID (Github username):
+    owner:
+    # The repo to store comments:
+    repo:
+    # The attribute of posts to use to link them to GitHub issues.
+    # See all attributes: https://hexo.io/docs/variables#Page-Variables
+    # `path` is recommended because the identifier needs to be unique and shorter than 50 characters.
+    post_identifier: path
+    # See all options: https://github.com/gitalk/gitalk#options
+    options:
+        language: "en"
+        perPage: 10
+        distractionFreeMode: false
+        enableHotKey: true
+        pagerDirection: "first"
 
 # -------------------
 # Integrated services
