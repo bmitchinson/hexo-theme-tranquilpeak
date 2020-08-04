@@ -5,6 +5,7 @@ var fb_admin_ids = [];
 var keywords = '';
 var photos = [];
 var publisher = '';
+var feeds = [];
 
 /**
  * Separate fb admin ids
@@ -109,6 +110,24 @@ var publisher = '';
         });
     }
 })();
+
+// Format RSS/Atom feeds.
+(function() {
+    function getFeedContentType(feedType) {
+        return feedType === 'atom' ? 'atom' : 'rss';
+    }
+    if (!config.feed || !config.feed.path.length) {
+        return;
+    }
+    var feedType = config.feed.type;
+    var feedPath = config.feed.path;
+    var feedTypes = typeof feedType === 'string' ? [feedType] : feedType;
+    var feedPaths = typeof feedPath === 'string' ? [feedPath] : feedPath;
+
+    feedPaths.forEach((feedPath, index) => {
+        feeds.push({type: getFeedContentType(feedTypes[index]), path: feedPath});
+    })
+})()
 %>
 <head>
     <meta charset="UTF-8">
@@ -122,8 +141,10 @@ var publisher = '';
     <% if (theme.favicon) { %>
         <link rel="icon" href="https://res.cloudinary.com/dheqbiqti/image/upload/fl_progressive/v1532150487/BenMitchinson.com/profile.jpg">
     <% } %>
-    <% if ((config.feed) && (config.feed.path.length)) { %>
-        <link rel="alternate" type="application/atom+xml" title="RSS" href="<%- url_for(config.feed.path) %>">
+    <% if (feeds.length) { %>
+        <% feeds.forEach(function(feed) { %>
+            <link rel="alternate" type="application/<%= feed.type %>+xml" title="RSS" href="<%- url_for(feed.path) %>">
+        <% }) %>
     <% } %>
     <%- json_ld() %>
     <%- open_graph({

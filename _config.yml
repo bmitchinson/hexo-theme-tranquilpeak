@@ -48,7 +48,7 @@ sidebar:
             icon: fa fa-calendar
         search:
             title: global.search
-            url: /#search
+            url: "#search"
             icon: fa fa-search
             #`open-algolia-search` classes are used to open algolia search modal
             class: open-algolia-search

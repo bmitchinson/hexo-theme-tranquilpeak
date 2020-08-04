@@ -64,14 +64,18 @@ If you are new to Hexo and internationalization (i18n), please read [Hexo docume
 
 Currently, the theme is delivered with:
 
-- Chinese (zh-CN)
-- Chinese Traditional (zh-TW)
+- German - Germany (de-DE)
 - English (en)
-- French (fr-FR)
-- Japanese (ja)
-- Portuguese (pt-BR)
-- Russian (ru)
 - Spanish (es)
+- Farsi (fa)
+- French - France (fr-FR)
+- Italian - Italy (it-IT)
+- Japanese (ja)
+- Korean (ko)
+- Brazilian Portuguese (pt-br)
+- Russian (ru)
+- Chinese (zh-cn)
+- Chinese Traditional (zh-tw)
 
 If your language is not available, follow this guidelines (E.g : add russian language (ru) :  
 
@@ -93,7 +97,7 @@ Complete `theme/tranquilpeak/_config.yml` with your information by following gui
 
 The search modal of the theme works with Algolia API to search in your posts. To enable this features, follow these steps:
 1. Create an account on Algolia
-2. Install and configure [hexo-algoliaseach](https://github.com/LouisBarranqueiro/hexo-algoliasearch) plugin
+2. Install and configure [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch) plugin
 3. Index your posts before deploying your blog. Here are the required fields:
 ``` yaml
   fields:
