@@ -141,7 +141,7 @@
             display: block;
             width:   100%;
         }
-        .postShorten-excerpt > p {
+        .postShorten-excerpt > p:last-of-type {
             margin-bottom: 0;
         }
         .postShorten-thumbnailimg {
