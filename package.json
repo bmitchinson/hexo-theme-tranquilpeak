@@ -5,6 +5,7 @@
   "main": "Gruntfile.js",
   "scripts": {
     "start": "npm run prod",
+    "build": "npm run prod",
     "watch": "npm run grunt -- default",
     "prod": "npm run grunt -- buildProd",
     "grunt": "node ./node_modules/grunt-cli/bin/grunt",
