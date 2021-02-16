@@ -8,10 +8,8 @@
 # For developpers, if you modify this theme, put your images in `source/_images` folder and
 # use grunt task `build` to synchronize assets
 
-
 # Image directory (default: images)
 image_dir: assets/images
-
 
 # ---------------------
 # Sidebar Configuration
@@ -29,53 +27,50 @@ image_dir: assets/images
 #                icon: home     # CSS class names of the Font Awesome icon
 #                               # Go to https://fontawesome.com/icons?d=gallery&m=free to find icons you want
 sidebar:
-    menu:
-        home:
-            title: global.home
-            url: /
-            icon: fa fa-home
-        mail:
-            title: global.mail
-            url: mailto:mitchinson.dev@gmail.com
-            icon: fas fa-envelope
-        tags:
-            title: global.tags
-            url: /all-tags
-            icon: fa fa-tags
-        archives:
-            title: global.archives
-            url: /all-archives
-            icon: fa fa-calendar
-        search:
-            title: global.search
-            url: "#search"
-            icon: fa fa-search
-            #`open-algolia-search` classes are used to open algolia search modal
-            class: open-algolia-search
-    author_links:
-        github:
-            title: global.github
-            url: https://github.com/bmitchinson
-            icon: fab fa-github
-        dev.to:
-            title: Dev.to
-            url: https://dev.to/bmitchinson
-            icon: fab fa-dev
-        twitter:
-            title: global.twitter
-            url: https://twitter.com/115bwm/
-            icon: fab fa-twitter
-        linkedin:
-            title: global.linkedin
-            url: https://www.linkedin.com/in/ben-mitchinson
-            icon: fab fa-linkedin-in
-        resume:
-            title: Resume
-            url: /resume
-            icon: fas fa-file-pdf
-        
-
-
+  menu:
+    home:
+      title: global.home
+      url: /
+      icon: fa fa-home
+    mail:
+      title: global.mail
+      url: mailto:mitchinson.dev@gmail.com
+      icon: fas fa-envelope
+    tags:
+      title: global.tags
+      url: /all-tags
+      icon: fa fa-tags
+    archives:
+      title: global.archives
+      url: /all-archives
+      icon: fa fa-calendar
+    search:
+      title: global.search
+      url: "#search"
+      icon: fa fa-search
+      #`open-algolia-search` classes are used to open algolia search modal
+      class: open-algolia-search
+  author_links:
+    github:
+      title: global.github
+      url: https://github.com/bmitchinson
+      icon: fab fa-github
+    dev.to:
+      title: Dev.to
+      url: https://dev.to/bmitchinson
+      icon: fab fa-dev
+    twitter:
+      title: global.twitter
+      url: https://twitter.com/115bwm/
+      icon: fab fa-twitter
+    linkedin:
+      title: global.linkedin
+      url: https://www.linkedin.com/in/ben-mitchinson
+      icon: fab fa-linkedin-in
+    resume:
+      title: Resume
+      url: /resume
+      icon: fas fa-file-pdf
 
 # --------------------
 # Header configuration
@@ -90,11 +85,10 @@ sidebar:
 #     icon: search
 #     class: open-algolia-search
 header:
-    right_link:
-        url: /#about
-        icon:
-        class:
-
+  right_link:
+    url: /#about
+    icon:
+    class:
 
 # ------
 # Author
@@ -102,22 +96,21 @@ header:
 
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email: mitchinson.dev@gmail.com
-    location: Des Moines, IA
-    # Your profile picture located in folder `source/_images/` (development)
-    # or in `source/assets/images/` (production)
-    # or you can use an external url
-    # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture: https://res.cloudinary.com/dheqbiqti/image/upload/fl_progressive/v1532150487/BenMitchinson.com/profile.jpg
-    # Your Twitter username without the @. E.g : `tranquilpeak`
-    twitter: 115bwm
-    # Your personal google plus profile id, not your blog or business page id.
-    # E.g : `+JohnDoe` or `123812884128439`
-    google_plus:
-    # Your businnes google plus profile id. If not provided, personal will be used instead.
-    # E.g : `+Tranquilpeak` or `123812884128439`
-    google_plus_business:
-
+  email: mitchinson.dev@gmail.com
+  location: Des Moines, IA
+  # Your profile picture located in folder `source/_images/` (development)
+  # or in `source/assets/images/` (production)
+  # or you can use an external url
+  # Overwritten by your gravatar image if `gravatar_email` is filled
+  picture: https://res.cloudinary.com/dheqbiqti/image/upload/fl_progressive/v1532150487/BenMitchinson.com/profile.jpg
+  # Your Twitter username without the @. E.g : `tranquilpeak`
+  twitter: 115bwm
+  # Your personal google plus profile id, not your blog or business page id.
+  # E.g : `+JohnDoe` or `123812884128439`
+  google_plus:
+  # Your businnes google plus profile id. If not provided, personal will be used instead.
+  # E.g : `+Tranquilpeak` or `123812884128439`
+  google_plus_business:
 
 # -------------
 # Customization
@@ -172,7 +165,6 @@ tag_pagination: true
 reading_time: true
 word_count: false
 
-
 # ---------------
 # Comment systems
 # ---------------
@@ -182,45 +174,45 @@ disqus_shortname: benmitchinson
 # Your Gitment information
 # Read https://github.com/imsun/gitment#get-started to setup Gitment
 gitment:
-    # Switch
-    enable: false
-    # Your Github ID (Github username):
-    github_id:
-    # The repo to store comments:
-    repo:
-    # Your client ID:
-    client_id:
-    # Your client secret:
-    client_secret:
-    # The attribute of posts to use to link them to GitHub issues.
-    # See all attributes: https://hexo.io/docs/variables#Page-Variables
-    # `path` is recommended because the identifier needs to be unique and shorter than 50 characters.
-    post_identifier: permalink
+  # Switch
+  enable: false
+  # Your Github ID (Github username):
+  github_id:
+  # The repo to store comments:
+  repo:
+  # Your client ID:
+  client_id:
+  # Your client secret:
+  client_secret:
+  # The attribute of posts to use to link them to GitHub issues.
+  # See all attributes: https://hexo.io/docs/variables#Page-Variables
+  # `path` is recommended because the identifier needs to be unique and shorter than 50 characters.
+  post_identifier: permalink
 
 # Your Gitalk information
 # Read https://github.com/gitalk/gitalk#options to set up Gitalk
 gitalk:
-    # Switch
-    enable: false
-    # Your client ID:
-    client_id:
-    # Your client secret:
-    client_secret:
-    # Your Github ID (Github username):
-    owner:
-    # The repo to store comments:
-    repo:
-    # The attribute of posts to use to link them to GitHub issues.
-    # See all attributes: https://hexo.io/docs/variables#Page-Variables
-    # `path` is recommended because the identifier needs to be unique and shorter than 50 characters.
-    post_identifier: path
-    # See all options: https://github.com/gitalk/gitalk#options
-    options:
-        language: "en"
-        perPage: 10
-        distractionFreeMode: false
-        enableHotKey: true
-        pagerDirection: "first"
+  # Switch
+  enable: false
+  # Your client ID:
+  client_id:
+  # Your client secret:
+  client_secret:
+  # Your Github ID (Github username):
+  owner:
+  # The repo to store comments:
+  repo:
+  # The attribute of posts to use to link them to GitHub issues.
+  # See all attributes: https://hexo.io/docs/variables#Page-Variables
+  # `path` is recommended because the identifier needs to be unique and shorter than 50 characters.
+  post_identifier: path
+  # See all options: https://github.com/gitalk/gitalk#options
+  options:
+    language: "en"
+    perPage: 10
+    distractionFreeMode: false
+    enableHotKey: true
+    pagerDirection: "first"
 
 # -------------------
 # Integrated services
@@ -236,7 +228,6 @@ gravatar_email:
 fb_admin_ids:
 # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
 fb_app_id:
-
 
 # ---------------
 # Sharing options
@@ -260,38 +251,54 @@ fb_app_id:
 #     share_on_foo_bar: "Share on Foo Bar"
 # ```
 sharing_options:
-    # facebook:
-        # icon: "fab fa-facebook"
-        # url: "https://www.facebook.com/sharer/sharer.php?u={{post.permalink}}"
-    twitter:
-        icon: "fab fa-twitter"
-        url: "https://twitter.com/intent/tweet?text={{post.permalink}}"
-    # google_plus:
-    #    icon: "fa-google-plus"
-    #    url: "https://plus.google.com/share?url={{post.permalink}}"
-    # Asian social networks
-    # weibo:
-    #     title: "Weibo"
-    #     icon: "fa-weibo"
-    #     url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
-    # qq:
-    #     title: "QQ"
-    #     icon: "fa-qq"
-    #     url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
-    # qzone:
-    #     title: "Qzone"
-    #     icon: "fa-star"
-    #     url: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{post.permalink}}"
-    # renren:
-    #     title: "Renren"
-    #     icon: "fa-renren"
-    #     url: "http://widget.renren.com/dialog/share?resourceUrl={{post.permalink}}"
-    # Russian social networks
-    # vk:
-    #     title: "VK"
-    #     icon: "fa-vk"
-    #     url: "https://vk.com/share.php?url={{post.permalink}}"
-    # odnoklassniki:
-    #     title: "Odnoklassniki"
-    #     icon: "fa-odnoklassniki"
-    #     url: "https://connect.ok.ru/offer?url={{post.permalink}}"
+  # facebook:
+  # icon: "fab fa-facebook"
+  # url: "https://www.facebook.com/sharer/sharer.php?u={{post.permalink}}"
+  twitter:
+    icon: "fab fa-twitter"
+    url: "https://twitter.com/intent/tweet?text={{post.permalink}}"
+  # google_plus:
+  #    icon: "fa-google-plus"
+  #    url: "https://plus.google.com/share?url={{post.permalink}}"
+  # Asian social networks
+  # weibo:
+  #     title: "Weibo"
+  #     icon: "fa-weibo"
+  #     url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
+  # qq:
+  #     title: "QQ"
+  #     icon: "fa-qq"
+  #     url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
+  # qzone:
+  #     title: "Qzone"
+  #     icon: "fa-star"
+  #     url: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{post.permalink}}"
+  # renren:
+  #     title: "Renren"
+  #     icon: "fa-renren"
+  #     url: "http://widget.renren.com/dialog/share?resourceUrl={{post.permalink}}"
+  # Russian social networks
+  # vk:
+  #     title: "VK"
+  #     icon: "fa-vk"
+  #     url: "https://vk.com/share.php?url={{post.permalink}}"
+  # odnoklassniki:
+  #     title: "Odnoklassniki"
+  #     icon: "fa-odnoklassniki"
+  #     url: "https://connect.ok.ru/offer?url={{post.permalink}}"
+
+algolia:
+  appId: "8HK3Y7M8DU"
+  apiKey: "1cd490d488a94b2d8d205df168c22b49"
+  adminApiKey: ""
+  chunkSize: 5000
+  indexName: "benmitchinson.com"
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
