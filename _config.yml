@@ -44,12 +44,12 @@ sidebar:
       title: global.archives
       url: /all-archives
       icon: fa fa-calendar
-    search:
-      title: global.search
-      url: "#search"
-      icon: fa fa-search
-      #`open-algolia-search` classes are used to open algolia search modal
-      class: open-algolia-search
+    # search:
+    #   title: global.search
+    #   url: "#search"
+    #   icon: fa fa-search
+    #   #`open-algolia-search` classes are used to open algolia search modal
+    #   class: open-algolia-search
   author_links:
     github:
       title: global.github
@@ -286,19 +286,3 @@ sharing_options:
   #     title: "Odnoklassniki"
   #     icon: "fa-odnoklassniki"
   #     url: "https://connect.ok.ru/offer?url={{post.permalink}}"
-
-algolia:
-  appId: "8HK3Y7M8DU"
-  apiKey: "1cd490d488a94b2d8d205df168c22b49"
-  adminApiKey: ""
-  chunkSize: 5000
-  indexName: "benmitchinson.com"
-  fields:
-    - content:strip:truncate,0,500
-    - excerpt:strip
-    - gallery
-    - permalink
-    - photos
-    - slug
-    - tags
-    - title
